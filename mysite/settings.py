@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'userauth',
-        'USER':'postgres',
-        'PASSWORD':'HARSHSHARMA',
-        'HOST':'localhost',
+        'ENGINE': 'django.db.backends.sqllite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'USER':'postgres',
+        #'PASSWORD':'HARSHSHARMA',
+        #'HOST':'localhost',
     }
 }
 
